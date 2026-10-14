@@ -1,13 +1,15 @@
 # Heal_Bar
 
-Heal_Bar is a historical PocketMine-MP plugin that displays floating text for damage and remaining health after an entity is hit.
+Heal_Bar displays a short floating damage and remaining-health readout when an entity takes non-cancelled damage. It waits one tick so the health line reflects the result after the server applies damage, uses the event's final damage value, and hides both particles after one second.
 
-## Compatibility and status
+## Compatibility and validation
 
-The manifest declares PocketMine-MP API `2.0.0` and `3.0.0`. The source uses the old `Level`, `FloatingTextParticle` and `PluginTask` APIs. It has not been ported or tested on Axolotl-PM 5. Do not install this source on a current server.
+The manifest requires Axolotl-PM API 5.0.0. PHPStan max and reproducible PHAR builds are checked against pinned API 5.0.0 and 5.49.1 source revisions. Those test points do not prove compatibility with every API 5 release.
 
-The floating text is scheduled after a damage event and then hidden by a later task. A port needs tests for cancelled events, damage calculation, particle cleanup and server performance before claiming equivalent behavior.
+CI starts the generated PHAR on an isolated Axolotl-PM server and verifies clean startup and shutdown. It does not test visible particle rendering with a connected Bedrock client.
 
-The manifest credits PTK-KienPham and records an edit by Ghast Noob. Preserve both credits. There is no LICENSE file, CI workflow, DevTools PHAR, Axolotl-PM 5 runtime test or verified current release. Resolve redistribution rights with the rights holders before publishing a modified build.
+## Credits and distribution
+
+The manifest retains PTK-KienPham as author and Ghast Noob's edit credit. There is no LICENSE file or verified grant to redistribute a modified build; no license was added and no stable release was published.
 
 For questions about the NhanAZ ecosystem, use [NhanAZ Discord](https://discord.gg/j2X83ujT6c).

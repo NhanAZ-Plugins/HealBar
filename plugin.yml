@@ -1,7 +1,7 @@
 name: Heal_Bar
 author: PTK-KienPham
 main: HB\HB
-version: 0.2
-api: [2.0.0, 3.0.0]
+version: '0.2'
+api: 5.0.0
 description: Hiển Thị Các Chỉ Số Máu Bị Trừ Khi Người Chơi Mất Máu
 #Edit: Ghast Noob
