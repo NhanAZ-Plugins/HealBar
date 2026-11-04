@@ -1,5 +1,5 @@
 name: Heal_Bar
-author: PTK-KienPham
+authors: ["NhanAZ", "PTK-KienPham"]
 main: HB\HB
 version: 0.2.0
 api: 5.0.0
