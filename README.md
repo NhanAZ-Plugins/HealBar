@@ -1,6 +1,14 @@
 # Heal_Bar
 
-Heal_Bar displays a short floating damage and remaining-health readout when an entity takes non-cancelled damage. It waits one tick so the health line reflects the result after the server applies damage, uses the event's final damage value, and hides both particles after one second.
+Floating health and damage display for Axolotl-PM API 5.
+
+[![CI](https://github.com/NhanAZ-Plugins/Heal_Bar/actions/workflows/build.yml/badge.svg)](https://github.com/NhanAZ-Plugins/Heal_Bar/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/NhanAZ-Plugins/Heal_Bar)](https://github.com/NhanAZ-Plugins/Heal_Bar/releases/latest)
+[![Discord](https://img.shields.io/discord/986553214889517088?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/j2X83ujT6c)
+
+## Overview
+
+This plugin targets the PocketMine-MP and Axolotl-PM API 5 ecosystem and is maintained under [NhanAZ-Plugins](https://github.com/NhanAZ-Plugins).
 
 ## Compatibility and validation
 
@@ -11,5 +19,3 @@ CI starts the generated PHAR on an isolated Axolotl-PM server and verifies clean
 ## Credits and distribution
 
 The manifest retains PTK-KienPham as author and Ghast Noob's edit credit. There is no LICENSE file or verified grant to redistribute a modified build; no license was added and no stable release was published.
-
-For questions about the NhanAZ ecosystem, use [NhanAZ Discord](https://discord.gg/j2X83ujT6c).
