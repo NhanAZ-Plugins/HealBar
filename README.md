@@ -15,4 +15,9 @@ CI starts the generated PHAR on an isolated Axolotl-PM server and verifies clean
 
 ## Credits and distribution
 
-The manifest retains PTK-KienPham as author and Ghast Noob's edit credit. There is no LICENSE file or verified grant to redistribute a modified build; no license was added and no stable release was published.
+The manifest retains PTK-KienPham as author and NhanAZ's edit credit. There is no LICENSE file or verified grant to redistribute a modified build; no license was added and no stable release was published.
+
+
+## Credits
+
+Authors: NhanAZ, PTK-KienPham.
