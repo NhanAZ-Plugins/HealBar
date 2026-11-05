@@ -1,9 +1,9 @@
-# Heal_Bar
+# HealBar
 
 Floating health and damage display for Axolotl-PM API 5.
 
-[![CI](https://github.com/NhanAZ-Plugins/Heal_Bar/actions/workflows/build.yml/badge.svg)](https://github.com/NhanAZ-Plugins/Heal_Bar/actions/workflows/build.yml)
-[![Latest release](https://img.shields.io/github/v/release/NhanAZ-Plugins/Heal_Bar)](https://github.com/NhanAZ-Plugins/Heal_Bar/releases/latest)
+[![CI](https://github.com/NhanAZ-Plugins/HealBar/actions/workflows/build.yml/badge.svg)](https://github.com/NhanAZ-Plugins/HealBar/actions/workflows/build.yml)
+[![Latest release](https://img.shields.io/github/v/release/NhanAZ-Plugins/HealBar)](https://github.com/NhanAZ-Plugins/HealBar/releases/latest)
 [![Discord](https://img.shields.io/discord/986553214889517088?label=Discord&logo=discord&logoColor=white&color=5865F2)](https://discord.gg/j2X83ujT6c)
 
 

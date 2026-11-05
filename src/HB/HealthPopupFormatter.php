@@ -7,7 +7,7 @@ namespace HB;
 final class HealthPopupFormatter{
 	public static function damage(float $damage, float $health, float $maxHealth) : string{
 		$color = $damage < 3 ? "§a" : ($damage < 6 ? "§e" : "§c");
-		return $color . "-" . self::number($damage) . " Máu\n§e" . self::number($health) . "/" . self::number($maxHealth);
+		return $color . "-" . self::number($damage) . " Health\n§e" . self::number($health) . "/" . self::number($maxHealth);
 	}
 
 	public static function health(float $health, float $maxHealth) : string{

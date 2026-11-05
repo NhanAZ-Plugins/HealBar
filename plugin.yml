@@ -1,7 +1,6 @@
-name: Heal_Bar
+name: HealBar
 authors: ["NhanAZ", "PTK-KienPham"]
 main: HB\HB
 version: 0.2.0
 api: 5.0.0
-description: Hiển Thị Các Chỉ Số Máu Bị Trừ Khi Người Chơi Mất Máu
-#Edit: Ghast Noob
+description: Display floating health and damage values

@@ -15,7 +15,7 @@ use pocketmine\math\Vector3;
 
 final class HB extends PluginBase implements Listener{
 	protected function onEnable() : void{
-		$this->getLogger()->info("Plugin Đã Hoạt Động");
+		$this->getLogger()->info("HealBar enabled.");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 
