@@ -1,4 +1,4 @@
-name: Build and validate Heal_Bar
+name: Build and validate HealBar
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     name: Test health popup formatting
     runs-on: ubuntu-24.04
     steps:
-      - name: Check out Heal_Bar source
+      - name: Check out HealBar source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       - name: Set up PHP 8.4
         uses: axolotl-pm/setup-php-action@b8c3f9add4f2ad4a5e2624a1112aba899ee8db0e
@@ -50,7 +50,7 @@ jobs:
       axolotl-ref: ${{ matrix.ref }}
       artifact-name: heal-bar-api-${{ matrix.label }}-${{ github.sha }}
   runtime-smoke:
-    name: Smoke-test Heal_Bar startup on Axolotl-PM 5.51.1
+    name: Smoke-test HealBar startup on Axolotl-PM 5.51.1
     needs: [test, build]
     runs-on: ubuntu-24.04
     steps:
@@ -76,13 +76,13 @@ jobs:
             https://github.com/axolotl-pm/PocketMine-MP/releases/download/5.51.1/PocketMine-MP.phar \
             --output "$runtime/PocketMine-MP.phar"
           printf '%s  %s\n' "$SERVER_SHA256" "$runtime/PocketMine-MP.phar" | sha256sum --check --status
-          cp "${{ runner.temp }}/heal-bar-artifact/Heal_Bar.phar" "$runtime/data/plugins/Heal_Bar.phar"
+          cp "${{ runner.temp }}/heal-bar-artifact/HealBar.phar" "$runtime/data/plugins/HealBar.phar"
           php "$runtime/PocketMine-MP.phar" --no-wizard --disable-ansi \
             --data="$runtime/data" --plugins="$runtime/data/plugins" > "$runtime/server.log" 2>&1 &
           server_pid=$!
           ready=0
           for _ in $(seq 1 90); do
-            if grep -Fq 'Enabling Heal_Bar v0.2' "$runtime/server.log"; then ready=1; fi
+            if grep -Fq 'Enabling HealBar v0.2' "$runtime/server.log"; then ready=1; fi
             if grep -Fq 'Done (' "$runtime/server.log"; then break; fi
             if ! kill -0 "$server_pid" 2>/dev/null; then cat "$runtime/server.log"; exit 1; fi
             sleep 1
